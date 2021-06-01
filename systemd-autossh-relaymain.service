@@ -1,0 +1,22 @@
+[Unit]
+Description=Keeps a tunnel to 'l3' open
+After=network.target
+
+[Service]
+Environment="AUTOSSH_PIDFILE=/var/run/autossh.pid"
+Environment="AUTOSSH_POLL=60"
+Environment="AUTOSSH_FIRST_POLL=30"
+Environment="AUTOSSH_GATETIME=0"
+Environment="AUTOSSH_DEBUG=1"
+ExecStart=/usr/bin/autossh -M $SOME_OTHER_RANDOM_PORT_ON_VPS -N \
+-R $SOME_RANDOM_PORT_ON_VPS:localhost:8581 \
+-o ServerAliveInterval=60 -o ServerAliveCountMax=3 \
+-o IdentitiesOnly=yes  -o StrictHostKeyChecking=no \
+-o UserKnownHostsFile=/dev/null -o LogLevel=ERROR -F /dev/null \
+-i /home/morphs/.ssh/private_key_file \
+username@11.22.33.44
+ExecStop=/usr/bin/pkill autossh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
