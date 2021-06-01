@@ -1,0 +1,37 @@
+[37m[6/1/2021, 1:45:15 AM][0m [36m[HB Supervisor][0m Homebridge Storage Path: /Users/morpheous/.homebridge
+[37m[6/1/2021, 1:45:15 AM][0m [36m[HB Supervisor][0m Homebridge Config Path: /Users/morpheous/.homebridge/config.json
+[37m[6/1/2021, 1:45:15 AM][0m [36m[HB Supervisor][0m Logging to /Users/morpheous/.homebridge/homebridge.log
+[37m[6/1/2021, 1:45:15 AM][0m [36m[HB Supervisor][0m OS: Darwin 20.4.0 x64
+[37m[6/1/2021, 1:45:15 AM][0m [36m[HB Supervisor][0m Node.js v12.18.3 /Users/morpheous/.nvm/versions/node/v12.18.3/bin/node
+[37m[6/1/2021, 1:45:15 AM][0m [36m[HB Supervisor][0m Homebridge Path: /Users/morpheous/.nvm/versions/node/v12.18.3/lib/node_modules/homebridge/bin/homebridge
+[37m[6/1/2021, 1:45:15 AM][0m [36m[HB Supervisor][0m UI Path: /Users/morpheous/.nvm/versions/node/v12.18.3/lib/node_modules/homebridge-config-ui-x/dist/bin/standalone.js
+[0;37m[6/1/2021, 1:45:17 AM] [0m[0;36m[Homebridge UI][0m [0;33mHomebridge Config UI X v4.41.1 is listening on :: port 8581[0m
+[37m[6/1/2021, 1:45:17 AM][0m [36m[HB Supervisor][0m Starting Homebridge with extra flags: -I
+[37m[6/1/2021, 1:45:17 AM][0m [36m[HB Supervisor][0m Started Homebridge v1.3.4 with PID: 52397
+[0;37m[6/1/2021, 1:45:17 AM] [0m[0;36m[Homebridge UI][0m [0;33mAdded new user: admin[0m
+[0;37m[6/1/2021, 1:45:17 AM] [0m[0;36m[Homebridge UI][0m Username and password have been set to default:
+[0;37m[6/1/2021, 1:45:17 AM] [0m[0;36m[Homebridge UI][0m Username: admin
+[0;37m[6/1/2021, 1:45:17 AM] [0m[0;36m[Homebridge UI][0m Password: admin
+Initializing HAP-NodeJS v0.9.4...
+[37m[6/1/2021, 1:45:17 AM] [39mLoaded config.json with 0 accessories and 1 platforms.
+[37m[6/1/2021, 1:45:17 AM] [39m---
+[37m[6/1/2021, 1:45:17 AM] [39mLoaded plugin: homebridge-config-ui-x@4.41.1
+[37m[6/1/2021, 1:45:17 AM] [39mRegistering platform 'homebridge-config-ui-x.config'
+[37m[6/1/2021, 1:45:17 AM] [39m---
+[37m[6/1/2021, 1:45:17 AM] [39mLoading 1 platforms...
+[37m[6/1/2021, 1:45:17 AM] [39m[36m[Config][39m Initializing config platform...
+[37m[6/1/2021, 1:45:17 AM] [39m[36m[Config][39m Running in Service Mode
+Preparing Advertiser for 'Homebridge 651B D8F0' using bonjour-hap backend!
+Setup Payload:
+X-HM://0023NNVE35K8B
+Enter this code with your HomeKit app on your iOS device to pair with Homebridge:
+[30m[47m                       [49m[39m
+[30m[47m    ┌────────────┐     [49m[39m
+[30m[47m    │ 113-05-387 │     [49m[39m
+[30m[47m    └────────────┘     [49m[39m
+[30m[47m                       [49m[39m
+Starting to advertise 'Homebridge 651B D8F0' using bonjour-hap backend!
+[37m[6/1/2021, 1:45:18 AM] [39mHomebridge v1.3.4 (Homebridge 651B) is running on port 51276.
+[0;37m[6/1/2021, 1:46:21 AM] [0m[0;36m[Homebridge UI][0m Updated user: admin
+[37m[6/1/2021, 2:03:21 AM][0m [36m[HB Supervisor][0m Stopping services...
+[37m[6/1/2021, 2:03:21 AM] [39mGot SIGTERM, shutting down Homebridge...
