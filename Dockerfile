@@ -1,4 +1,5 @@
 FROM debian:stable-slim
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -y
 RUN apt-get install apt-transport-https -y
 RUN apt-get install apt-utils -y
@@ -16,6 +17,8 @@ RUN apt-get install curl -y
 # RUN apt-get install openssh-server -y
 # RUN apt-get install openssh-client -y
 RUN apt-get install python3 -y
+RUN apt-get install python3-pip -y
+RUN apt-get install python3-dev -y
 RUN apt-get install python3-setuptools -y
 RUN apt-get install python -y
 RUN apt-get install net-tools -y
