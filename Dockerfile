@@ -65,7 +65,8 @@ USER $USERNAME
 
 RUN mkdir -p /home/$USERNAME/homebridge
 WORKDIR /home/$USERNAME/homebridge
-RUN npm install -g --unsafe-perm homebridge
+# RUN npm install -g --unsafe-perm homebridge
+RUN npm install -g --unsafe-perm homebridge@1.3.4-beta.4
 RUN npm install -g --unsafe-perm homebridge-config-ui-x
 
 RUN /usr/bin/python3 -m pip install tzupdate
@@ -75,4 +76,5 @@ RUN npm config set unsafe-perm true
 RUN mkdir -p /home/$USERNAME/.homebridge
 COPY ./config /home/$USERNAME/.homebridge
 RUN sudo chown -R morphs:morphs /home/$USERNAME/.homebridge
-ENTRYPOINT [ "/bin/bash" ]
+#ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT [ "/home/morphs/.nvm/versions/node/v14.17.0/bin/homebridge" ]
